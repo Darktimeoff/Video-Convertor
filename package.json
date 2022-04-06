@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "lint:rule": "eslint src",
-    "lint:rule-fix": "eslint  src --fix --cache"
+    "lint:rule-fix": "eslint  src --fix --cache",
+    "lint:format": "prettier --write src"
   },
   "repository": {
     "type": "git",
@@ -30,10 +31,9 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-unicorn": "^42.0.0",
     "husky": "^6.0.0",
     "lint-staged": "^12.3.7",
-    "prettier": "^2.6.2",
+    "prettier": "2.6.2",
     "yorkie": "^2.0.0"
   },
   "lint-staged": {
