@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "lint:rule": "eslint src",
-    "lint:rule-fix": "eslint  src --fix",
-    "prepare": "npx husky install ./husky"
+    "lint:rule-fix": "eslint  src --fix --cache"
   },
   "repository": {
     "type": "git",
@@ -38,9 +37,8 @@
     "yorkie": "^2.0.0"
   },
   "lint-staged": {
-    "*.{ts}": [
-      "npm run lint:rule",
-      "git add"
+    "*.ts": [
+      "npm run lint:rule-fix"
     ]
   }
 }
