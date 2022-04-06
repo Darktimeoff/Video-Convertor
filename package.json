@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "lint:rule": "eslint src",
-    "lint:rule-fix": "eslint  src --fix"
+    "lint:rule-fix": "eslint  src --fix",
+    "prepare": "npx husky install ./husky"
   },
   "repository": {
     "type": "git",
@@ -31,11 +32,10 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unicorn": "^42.0.0",
+    "husky": "^6.0.0",
     "lint-staged": "^12.3.7",
-    "prettier": "^2.6.2"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
+    "prettier": "^2.6.2",
+    "yorkie": "^2.0.0"
   },
   "lint-staged": {
     "*.{ts}": [
