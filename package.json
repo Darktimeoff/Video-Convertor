@@ -1,0 +1,42 @@
+{
+  "name": "video-convertor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint:rule-fix": "eslint src --fix",
+    "lint-staged": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darktimeoff/Video-Convertor.git"
+  },
+  "author": "Yevhenii Korolikhin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darktimeoff/Video-Convertor/issues"
+  },
+  "homepage": "https://github.com/Darktimeoff/Video-Convertor#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-unicorn": "^42.0.0",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.2"
+  },
+  "lint-staged": {
+    "*.{ts}": [
+      "npm run lint:rule-fix",
+      "git add"
+    ]
+  }
+}

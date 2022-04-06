@@ -1,0 +1,17 @@
+{
+    "env": {
+        "es6": true,
+        "browser": false
+    },
+    "plugins": [
+        "prettier",
+        "unicorn"
+    ],
+    "extends": [
+        "airbnb-base",            
+        "plugin:unicorn/recommended",
+        "plugin:prettier/recommended",
+        "prettier",
+        "prettier/unicorn"
+    ],
+}
