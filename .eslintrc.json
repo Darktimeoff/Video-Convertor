@@ -26,6 +26,7 @@
     "rules": {
         "no-console": "off",
         "no-useless-constructor": "off",
+        "no-use-before-define": 0,
         "import/prefer-default-export": "off",
         "class-methods-use-this": "off",
         "import/extensions": [
