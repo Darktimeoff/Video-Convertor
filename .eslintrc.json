@@ -14,8 +14,8 @@
         "plugin:import/errors",
         "plugin:import/warnings",
         "plugin:import/typescript",
-        "plugin:prettier/recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
         "prettier"
     ],
     "parser": "@typescript-eslint/parser",
@@ -25,6 +25,7 @@
     },
     "rules": {
         "no-console": "off",
+        "no-useless-constructor": "off",
         "import/prefer-default-export": "off",
         "class-methods-use-this": "off",
         "import/extensions": [
@@ -36,7 +37,8 @@
               "ts": "never",
               "tsx": "never"
             }
-        ]
+        ],
+        "@typescript-eslint/no-explicit-any": ["off"]
     }
     
 }
