@@ -5,10 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "lint:rule": "eslint --ext src/",
-    "lint:rule-fix": "eslint src --fix",
-    "lint-staged": "lint-staged",
-    "lint:format": "prettier --write"
+    "lint:rule": "eslint src",
+    "lint:rule-fix": "eslint  src --fix"
   },
   "repository": {
     "type": "git",
@@ -41,7 +39,7 @@
   },
   "lint-staged": {
     "*.{ts}": [
-      "npm run lint:rule-fix",
+      "npm run lint:rule",
       "git add"
     ]
   }
