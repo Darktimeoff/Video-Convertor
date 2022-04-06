@@ -2,9 +2,9 @@
   "name": "video-convertor",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module",
+  "main": "app.js",
   "scripts": {
+    "build": "tsc && node dist/app.js",
     "lint:rule": "eslint src",
     "lint:rule-fix": "eslint  src --fix --cache",
     "lint:format": "prettier --write src"
