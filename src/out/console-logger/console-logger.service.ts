@@ -6,7 +6,7 @@ export class ConsoleLogger implements IStreamLogger {
   // eslint-disable-next-line
     private constructor() {};
 
-  getInstance() {
+  static getInstance() {
     if (!ConsoleLogger.instance) {
       // eslint-disable-next-line
       ConsoleLogger.instance = new ConsoleLogger();
